@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;        /* размер шрифта */
+    line-height: 1.65;      /* расстояние между верхней и нижнец границей */
+    font-family: Poppins;   /* Семейство шрифта */
+}
+
+header {
+    margin: 50px auto;      /* отступ сверху и снизу 50px , слева и справа авто. */
+    max-width: 85%;         /* максимальная ширина на странице */
+    display: flex;          /* выравнивание текста в строку */
+    align-items: center;
+    padding-bottom: 20px;
+}   
+
+header .logo {
+    max-width: 250px;
+    color: #4f4c67;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 150px;
+}
+
+header .menu {
+    list-style-type: none;  /* убирает стили */
+}
+
+header .menu li {
+    display: inline-block;  /* делает меню строчным */
+    margin-right: 75px;     /* перемещает в право */
+}
+
+header .menu li a{
+    display: block;  /* увеличивакт радиус взаимодействия */
+    text-decoration: none; /* убирает стили */
+    color: #4f4c67;
+    font-size: 20px;
+}
+
+header .menu li a:hover{    /* эффект при наведении на ссылку */
+    color: #3a374c;
+}
+
+
+header .btns {
+    text-decoration: none;
+    align-items: center ;
+    border: 2px solid orange;
+    font-size: 12px;
+    padding: 5px 30px;
+}
