@@ -18,7 +18,7 @@ header {
 
 header .logo {
     max-width: 250px;
-    color: #4f4c67;
+    color: #2E3B5F;
     font-size: 40px;
     text-decoration: none;
     margin-right: 150px;
@@ -30,14 +30,15 @@ header .menu {
 
 header .menu li {
     display: inline-block;  /* делает меню строчным */
-    margin-right: 75px;     /* перемещает в право */
+    margin-right: 50px;     /* перемещает в право */
 }
 
 header .menu li a{
     display: block;  /* увеличивакт радиус взаимодействия */
     text-decoration: none; /* убирает стили */
-    color: #4f4c67;
-    font-size: 20px;
+    color: #2E3B5F;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 header .menu li a:hover{    /* эффект при наведении на ссылку */
@@ -45,10 +46,23 @@ header .menu li a:hover{    /* эффект при наведении на сс�
 }
 
 
-header .btns {
+header .btns a{
     text-decoration: none;
     align-items: center ;
-    border: 2px solid orange;
+    border: 2px solid #AB5934;
     font-size: 12px;
     padding: 5px 30px;
+    font-weight: 600;
+    color: #AB5934;
+}
+
+header .far {
+    margin-left: 10px;
+    margin-right: 25px;
+    color: #AB5934;
+}
+
+header .fas {
+    margin-right: 20px;
+    color: #2E3B5F;
 }
