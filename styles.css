@@ -9,31 +9,38 @@ body {
 }
 
 header {
-    margin: 50px auto;      /* отступ сверху и снизу 50px , слева и справа авто. */
-    max-width: 85%;         /* максимальная ширина на странице */
+    margin: 40px auto;      /* отступ сверху и снизу 50px , слева и справа авто. */
+    width: 85%;       /* максимальная ширина на странице */
     display: flex;          /* выравнивание текста в строку */
     align-items: center;
     padding-bottom: 20px;
 }   
 
-header .logo {
-    max-width: 250px;
+.logo {
+    display: block;
+    max-width: 10wv;
     color: #2E3B5F;
-    font-size: 40px;
+    font-size: 3em;
     text-decoration: none;
-    margin-right: 150px;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
-header .menu {
+.menu {
     list-style-type: none;  /* убирает стили */
 }
 
-header .menu li {
+.menu li {
     display: inline-block;  /* делает меню строчным */
-    margin-right: 50px;     /* перемещает в право */
+    margin-right: 2vw;     /* перемещает в право */
 }
 
-header .menu li a{
+.menu li aii{
+    display: inline-block;
+}
+
+
+.menu li a{
     display: block;  /* увеличивакт радиус взаимодействия */
     text-decoration: none; /* убирает стили */
     color: #2E3B5F;
@@ -41,28 +48,69 @@ header .menu li a{
     font-weight: 500;
 }
 
-header .menu li a:hover{    /* эффект при наведении на ссылку */
-    color: #3a374c;
+.menu li a:hover{    /* эффект при наведении на ссылку */
+    color: #1DB954;
 }
 
-
-header .btns a{
+.btns a{
     text-decoration: none;
     align-items: center ;
     border: 2px solid #AB5934;
     font-size: 12px;
-    padding: 5px 30px;
+    padding: 0.5vh 2vw;
     font-weight: 600;
     color: #AB5934;
 }
 
-header .far {
-    margin-left: 10px;
-    margin-right: 25px;
+.far {
+    margin-left: -2vw;
     color: #AB5934;
 }
 
-header .fas {
-    margin-right: 20px;
+.menu ul {                            /* Начало выпадающего списка */
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}                                     /* Конец выпдающего списка */
+
+.fas {
+    margin-right: 1vw;
     color: #2E3B5F;
 }
+
+@media screen and (max-width: 1610px) {
+    .logo {
+        margin: 0 3vw;
+    }
+    .menu li a {
+        font-size: 14px;
+    }
+    .btns i {
+        padding-top: 1vh;
+    }
+    .btns {
+        display: flex;
+        text-align: center;
+    
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .menu {
+    }
+
+}
+
+
+
