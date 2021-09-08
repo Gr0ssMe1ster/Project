@@ -79,6 +79,7 @@ header {
     list-style-type: none;
     background-color: white;
     border-radius: 2px;
+    padding: 5px;
 }                                     /* Конец выпдающего списка */
 
 .fas {
