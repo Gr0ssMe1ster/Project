@@ -10,22 +10,15 @@ body {
 }
 
 header {
-    margin: 40px auto;      /* отступ сверху и снизу 50px , слева и справа авто. */
-    width: 85%;       /* максимальная ширина на странице */
+    margin: 30px auto;      /* отступ сверху и снизу 50px , слева и справа авто. */
+    width: 70%;       /* максимальная ширина на странице */
     display: flex;          /* выравнивание блоков в строку */  
     align-items: center;
 }   
 
 .logo {
-    display: block;
-    max-width: 10wv;
-    color: #2E3B5F;
-    font-size: 3em;
-    text-decoration: none;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    width: 100px;
 }
-
 .menu {
     list-style-type: none;  /* убирает стили */
 }
@@ -33,6 +26,7 @@ header {
 .menu li {
     display: inline-block;  /* делает меню строчным */
     margin-right: 2vw;     /* перемещает в право */
+    position: relative;
 }
 
 .menu li a{
@@ -46,9 +40,15 @@ header {
     color: #1DB954;
 }
 
+.btns {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btns a{
     text-decoration: none;
-    align-items: center ;
+    align-items:center;
     border: 2px solid #AB5934;
     font-size: 12px;
     padding: 0.5vh 2vw;
@@ -68,7 +68,6 @@ header {
 
 .menu li:hover > ul {
     display: block;
-    left: 35vw;
 }
 
 .menu ul li {
@@ -78,8 +77,8 @@ header {
     position:relative;
     list-style-type: none;
     background-color: white;
-    border-radius: 2px;
     padding: 5px;
+    right: 45px;
 }                                     /* Конец выпдающего списка */
 
 .fas {
